@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar" onclick="onOff()">
+            <div class="nav-items">
+                <div class="clock">20:45</div>
+                <div class="battery"></div>
+                <div class="internet"></div>
+            </div>
+            <div class="items">
+                <div class="item"><i class="fi fi-rr-settings-sliders"></i></div>
+                <div class="item"><i class="fi fi-rr-clock"></i></div>
+                <div class="item"><i class="fi fi-rr-alarm-clock"></i></div>
+                <div class="item active"><i class="fi  fi-rr-headset"></i></div>
+                <div class="item"><i class="fi fi-rr-screen"></i></div>
+                <div class="item active"><i class="fi fi-rr-map"></i></div>
+                <div class="item"><i class="fi fi-rr-phone-call"></i></div>
+                <div class="item active"><i class="fi fi-rr-marker"></i></div>
+                <div class="item"><i class="fi  fi-rr-apps-add"></i></div>
+                <div class="item active"><i class="fi fi-rr-ban"></i></div>
+            </div>
+            <p class="label">Notifications<span>5</span></p>
+            <div class="notifications">
+                <div class="notify">
+                    <div class="app">
+                        Facebook <span>2</span>
+                    </div>
+                    <div class="message"></div>
+                </div>
+                <div class="notify">
+                    <div class="app">
+                        Instagram <span>3</span>
+                    </div>
+                    <div class="message"></div>
+                </div>
+            </div>
+            <i class="fi fi-rr-angle-small-up"></i>
+
+        </div>
+        <div class="frame" onclick="close()">
+            <div class="app-frame">
+                <i class="app-button fi fi-rr-cross" onclick="closeApp()"></i>
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="text"></div>
+                    <div class="text"></div>
+                    <div class="text"></div>
+                    <div class="card" id="big-card"></div>
+                    <div class="card" id="small-card"></div>
+                    <div class="card" id="medium-card"></div>
+                    <div class="card" id="medium-card"></div>
+                    <div class="card" id="big-card"></div>
+                    <div class="card" id="small-card"></div>
+                    <div class="card" id="big-card"></div>
+                    <div class="card" id="small-card"></div>
+                </div>
+            </div>
+            <div class="clock">
+                20:45 <i class="fi fi-rr-cloud"></i>
+            </div>
+            <div class="bar">
+                <div class="bar-item facebook" onclick="openApp()"></div>
+                <div class="bar-item instagram" onclick="openApp()"></div>
+                <div class="bar-item twitter" onclick="openApp()"></div>
+                <div class="bar-item pinterest" onclick="openApp()"></div>
+                <div class="bar-item chrome" onclick="openApp()"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
